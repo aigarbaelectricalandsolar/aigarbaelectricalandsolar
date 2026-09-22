@@ -3,94 +3,848 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>A I GARBA Electrical & Solar Installation Services</title>
-<meta name="description" content="Professional electrical and solar installation services in Kaduna. Solar systems, inverters, lithium batteries, electrical wiring, maintenance, troubleshooting and upgrades.">
+
+<meta name="description" content="A I GARBA Electrical & Solar Installation Services provides professional solar, inverter, battery, electrical, industrial and lighting installation services for homes, businesses and commercial projects.">
+
 <style>
-:root{--dark:#0b1720;--gold:#f5b700;--light:#f5f7f9;--text:#17212b}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6;background:#fff}
-header{background:linear-gradient(135deg,#071219,#123044);color:#fff;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
-.logo{font-weight:800;font-size:18px;max-width:650px}.logo span{color:var(--gold)}
-nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:600;font-size:14px}
-.hero{background:linear-gradient(rgba(5,15,22,.82),rgba(5,15,22,.82)),url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=80') center/cover;min-height:620px;display:flex;align-items:center;padding:70px 7%;color:#fff}
-.hero-content{max-width:760px}.badge{color:var(--gold);font-weight:800;letter-spacing:2px;margin-bottom:14px}
-h1{font-size:clamp(40px,6vw,72px);line-height:1.05;margin-bottom:22px}.hero p{font-size:20px;max-width:650px;color:#e5edf2}
-.buttons{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}.btn{padding:14px 22px;border-radius:8px;text-decoration:none;font-weight:800;display:inline-block}.primary{background:var(--gold);color:#111}.secondary{border:1px solid #fff;color:#fff}
-section{padding:75px 7%}.section-title{text-align:center;max-width:760px;margin:0 auto 45px}.section-title h2{font-size:38px;margin-bottom:10px}.section-title p{color:#61707b}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}.card{padding:28px;border-radius:14px;background:var(--light);border:1px solid #e2e7eb}.icon{font-size:34px;margin-bottom:12px}.card h3{margin-bottom:8px}
-.about{background:#eef3f5;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about img{width:100%;border-radius:16px}.checks{margin-top:20px;display:grid;gap:10px}.checks div{font-weight:700}
-.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.projects img{width:100%;height:220px;object-fit:cover;border-radius:12px}
-.cta{background:#0b1720;color:#fff;text-align:center}.cta h2{font-size:38px;margin-bottom:12px}.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact-box{background:var(--light);padding:30px;border-radius:14px}.contact-box p{margin:12px 0}
-footer{background:#071219;color:#dce5ea;text-align:center;padding:28px 7%;font-size:14px}
-@media(max-width:800px){nav{display:none}.about,.contact{grid-template-columns:1fr}.hero{min-height:570px}}
+:root{
+  --dark:#071219;
+  --dark2:#102a3a;
+  --gold:#f5b700;
+  --gold2:#ffc928;
+  --light:#f5f7f9;
+  --white:#ffffff;
+  --text:#17212b;
+  --muted:#65737d;
+  --border:#e2e7eb;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  line-height:1.6;
+  background:#fff;
+}
+
+header{
+  background:linear-gradient(135deg,var(--dark),var(--dark2));
+  color:#fff;
+  padding:18px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 3px 15px rgba(0,0,0,.18);
+}
+
+.logo{
+  font-weight:800;
+  font-size:17px;
+  max-width:650px;
+  line-height:1.3;
+}
+
+.logo span{
+  color:var(--gold);
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:700;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:var(--gold);
+}
+
+.hero{
+  background:
+    linear-gradient(rgba(5,15,22,.82),rgba(5,15,22,.88)),
+    url('images/solar-inverter-installation-01.jpg') center/cover;
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  padding:80px 7%;
+  color:#fff;
+}
+
+.hero-content{
+  max-width:800px;
+}
+
+.badge{
+  color:var(--gold);
+  font-weight:800;
+  letter-spacing:2px;
+  margin-bottom:15px;
+  font-size:14px;
+}
+
+h1{
+  font-size:clamp(40px,6vw,72px);
+  line-height:1.05;
+  margin-bottom:22px;
+}
+
+.hero p{
+  font-size:20px;
+  max-width:700px;
+  color:#e5edf2;
+}
+
+.buttons{
+  margin-top:30px;
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:14px 22px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:800;
+  display:inline-block;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.primary{
+  background:var(--gold);
+  color:#111;
+}
+
+.primary:hover{
+  background:var(--gold2);
+}
+
+.secondary{
+  border:1px solid #fff;
+  color:#fff;
+}
+
+.secondary:hover{
+  background:#fff;
+  color:#111;
+}
+
+section{
+  padding:80px 7%;
+}
+
+.section-title{
+  text-align:center;
+  max-width:800px;
+  margin:0 auto 45px;
+}
+
+.section-title h2{
+  font-size:38px;
+  margin-bottom:10px;
+}
+
+.section-title p{
+  color:var(--muted);
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:20px;
+}
+
+.card{
+  padding:28px;
+  border-radius:14px;
+  background:var(--light);
+  border:1px solid var(--border);
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.icon{
+  font-size:34px;
+  margin-bottom:12px;
+}
+
+.card h3{
+  margin-bottom:8px;
+}
+
+.about{
+  background:#eef3f5;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
+
+.about-image{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  border-radius:16px;
+}
+
+.checks{
+  margin-top:20px;
+  display:grid;
+  gap:10px;
+}
+
+.checks div{
+  font-weight:700;
+}
+
+.project-filters{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
+}
+
+.filter{
+  border:1px solid var(--border);
+  background:#fff;
+  padding:10px 16px;
+  border-radius:30px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.filter.active,
+.filter:hover{
+  background:var(--gold);
+  border-color:var(--gold);
+}
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.project{
+  background:#fff;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  box-shadow:0 5px 18px rgba(0,0,0,.06);
+}
+
+.project img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  display:block;
+}
+
+.project-info{
+  padding:18px;
+}
+
+.project-info h3{
+  margin-bottom:5px;
+}
+
+.project-info p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.cta{
+  background:linear-gradient(135deg,#071219,#102a3a);
+  color:#fff;
+  text-align:center;
+}
+
+.cta h2{
+  font-size:38px;
+  margin-bottom:12px;
+}
+
+.contact{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+.contact-box{
+  background:var(--light);
+  padding:30px;
+  border-radius:14px;
+  border:1px solid var(--border);
+}
+
+.contact-box p{
+  margin:12px 0;
+}
+
+.contact-box a{
+  color:inherit;
+}
+
+footer{
+  background:#071219;
+  color:#dce5ea;
+  text-align:center;
+  padding:28px 7%;
+  font-size:14px;
+}
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:999;
+  background:#25D366;
+  color:#fff;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:27px;
+  box-shadow:0 5px 18px rgba(0,0,0,.25);
+}
+
+@media(max-width:800px){
+  nav{
+    display:none;
+  }
+
+  .about,
+  .contact{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    min-height:600px;
+  }
+
+  .about-image{
+    height:300px;
+  }
+
+  section{
+    padding:60px 6%;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <header>
-  <div class="logo">⚡☀️ <span>A I GARBA</span> ELECTRICAL AND SOLAR INSTALLATION SERVICES</div>
-  <nav><a href="#services">Services</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+  <div class="logo">
+    ⚡☀️ <span>A I GARBA</span><br>
+    ELECTRICAL AND SOLAR INSTALLATION SERVICES
+  </div>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <main>
+
+<!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <div class="badge">RELIABLE POWER. SMART ENERGY. PROFESSIONAL SOLUTIONS.</div>
-    <h1>Electrical & Solar Solutions You Can Rely On.</h1>
-    <p>Professional solar, inverter, battery and electrical installation services for homes, businesses and industrial projects.</p>
+
+    <div class="badge">
+      RELIABLE POWER • SMART ENERGY • PROFESSIONAL SOLUTIONS
+    </div>
+
+    <h1>
+      Electrical & Solar Solutions You Can Rely On.
+    </h1>
+
+    <p>
+      Professional solar, inverter, battery and electrical installation
+      services for homes, businesses, commercial facilities and industrial projects.
+    </p>
+
     <div class="buttons">
-      <a class="btn primary" href="https://wa.me/2347014997234?text=Hello%20A%20I%20GARBA%20Electrical%20and%20Solar%20Installation%20Services%2C%20I%20would%20like%20to%20request%20a%20quotation.">Request a Quote</a>
-      <a class="btn secondary" href="tel:+2347014997234">Call 07014997234</a>
+      <a class="btn primary"
+         href="https://wa.me/2347014997234?text=Hello%20A%20I%20GARBA%20Electrical%20and%20Solar%20Installation%20Services%2C%20I%20would%20like%20to%20request%20a%20quotation.">
+        Request a Quote
+      </a>
+
+      <a class="btn secondary" href="tel:+2347014997234">
+        Call 07014997234
+      </a>
     </div>
+
   </div>
 </section>
 
+
+<!-- SERVICES -->
 <section id="services">
-  <div class="section-title"><h2>Our Services</h2><p>Safe, reliable and efficient power solutions delivered with professional workmanship.</p></div>
+
+  <div class="section-title">
+    <h2>Our Services</h2>
+    <p>
+      Safe, reliable and efficient electrical and solar solutions
+      delivered with professional workmanship.
+    </p>
+  </div>
+
   <div class="services">
-    <div class="card"><div class="icon">☀️</div><h3>Solar Installation</h3><p>Solar panel system design, installation, commissioning and upgrades.</p></div>
-    <div class="card"><div class="icon">🔋</div><h3>Inverter & Battery Systems</h3><p>Inverter, lithium battery and energy-storage installation and configuration.</p></div>
-    <div class="card"><div class="icon">⚡</div><h3>Electrical Wiring</h3><p>Residential, commercial and industrial electrical installation and wiring.</p></div>
-    <div class="card"><div class="icon">🛠️</div><h3>Maintenance & Repairs</h3><p>Fault finding, troubleshooting, maintenance, repairs and system upgrades.</p></div>
-    <div class="card"><div class="icon">📐</div><h3>System Design</h3><p>Professional planning and sizing of electrical and solar power systems.</p></div>
-    <div class="card"><div class="icon">🏢</div><h3>Commercial Projects</h3><p>Power solutions for offices, shops, businesses and larger installations.</p></div>
-  </div>
-</section>
 
-<section id="about" class="about">
-  <div>
-    <div class="section-title" style="text-align:left;margin:0 0 20px"><h2>About A I GARBA</h2></div>
-    <p>We provide professional electrical and solar engineering services focused on safe installation, dependable performance and efficient energy use.</p>
-    <div class="checks">
-      <div>✓ Quality workmanship</div><div>✓ Safety-focused installation</div><div>✓ Reliable power solutions</div><div>✓ Professional service</div>
+    <div class="card">
+      <div class="icon">☀️</div>
+      <h3>Solar Installation</h3>
+      <p>
+        Solar panel system design, installation, wiring,
+        commissioning and system upgrades.
+      </p>
     </div>
+
+    <div class="card">
+      <div class="icon">🔋</div>
+      <h3>Inverter & Battery Systems</h3>
+      <p>
+        Professional inverter, lithium battery and
+        energy-storage installation and configuration.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">⚡</div>
+      <h3>Electrical Installation</h3>
+      <p>
+        Residential, commercial and industrial electrical
+        installation, wiring and distribution systems.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🏭</div>
+      <h3>Industrial Electrical Services</h3>
+      <p>
+        Industrial control panels, electrical systems,
+        maintenance, troubleshooting and technical support.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💡</div>
+      <h3>Lighting Installation</h3>
+      <p>
+        Professional interior, exterior, residential and
+        commercial lighting installation.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <h3>Maintenance & Repairs</h3>
+      <p>
+        Fault finding, troubleshooting, maintenance,
+        repairs and electrical/solar system upgrades.
+      </p>
+    </div>
+
   </div>
-  <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1000&q=80" alt="Solar panels">
 </section>
 
+
+<!-- ABOUT -->
+<section id="about" class="about">
+
+  <div>
+
+    <div class="section-title"
+         style="text-align:left;margin:0 0 20px">
+      <h2>About A I GARBA</h2>
+    </div>
+
+    <p>
+      A I GARBA Electrical & Solar Installation Services provides
+      professional electrical and solar engineering solutions for
+      residential, commercial and industrial projects.
+    </p>
+
+    <p style="margin-top:15px">
+      Our work covers solar power systems, inverter and battery
+      installations, electrical wiring, control panels, lighting,
+      maintenance, troubleshooting and system upgrades.
+    </p>
+
+    <div class="checks">
+      <div>✓ Quality workmanship</div>
+      <div>✓ Safety-focused installation</div>
+      <div>✓ Reliable power solutions</div>
+      <div>✓ Professional service</div>
+      <div>✓ Residential & commercial projects</div>
+      <div>✓ Industrial electrical services</div>
+    </div>
+
+  </div>
+
+  <img
+    class="about-image"
+    src="images/solar-inverter-installation-team-02.jpg"
+    alt="A I GARBA solar and inverter installation team">
+
+</section>
+
+
+<!-- PROJECTS -->
 <section id="projects">
-  <div class="section-title"><h2>Our Work</h2><p>A selection of the type of electrical and solar work we deliver.</p></div>
+
+  <div class="section-title">
+    <h2>Our Projects</h2>
+    <p>
+      Real examples of our electrical, solar, inverter,
+      industrial and lighting installation work.
+    </p>
+  </div>
+
+
+  <div class="project-filters">
+
+    <button class="filter active" onclick="filterProjects('all')">
+      All
+    </button>
+
+    <button class="filter" onclick="filterProjects('solar')">
+      Solar & Inverter
+    </button>
+
+    <button class="filter" onclick="filterProjects('electrical')">
+      Electrical
+    </button>
+
+    <button class="filter" onclick="filterProjects('industrial')">
+      Industrial
+    </button>
+
+    <button class="filter" onclick="filterProjects('lighting')">
+      Lighting
+    </button>
+
+  </div>
+
+
   <div class="projects">
-    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=900&q=80" alt="Solar installation">
-    <img src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?auto=format&fit=crop&w=900&q=80" alt="Solar panels">
-    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=80" alt="Electrical installation">
+
+
+    <!-- SOLAR / INVERTER -->
+
+    <div class="project" data-category="solar">
+      <img src="images/solar-inverter-installation-01.jpg"
+           alt="Solar inverter installation">
+      <div class="project-info">
+        <h3>Solar Inverter Installation</h3>
+        <p>
+          Professional inverter installation with electrical
+          protection and system connections.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="project" data-category="solar">
+      <img src="images/solar-inverter-installation-team-02.jpg"
+           alt="Professional solar inverter installation team">
+      <div class="project-info">
+        <h3>Professional Installation Team</h3>
+        <p>
+          Technical installation and commissioning work
+          carried out by our installation team.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="project" data-category="solar">
+      <img src="images/solar-inverter-installation-work-03.jpg"
+           alt="Solar inverter installation work">
+      <div class="project-info">
+        <h3>Inverter & Protection System</h3>
+        <p>
+          Neat installation of inverter and electrical
+          protection equipment.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- ELECTRICAL -->
+
+    <div class="project" data-category="electrical">
+      <img src="images/residential-electrical-work-01.jpg"
+           alt="Residential electrical installation">
+      <div class="project-info">
+        <h3>Residential Electrical Work</h3>
+        <p>
+          Professional residential electrical installation
+          and finishing.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="project" data-category="electrical">
+      <img src="images/residential-lighting-finish-02.jpg"
+           alt="Residential electrical and lighting work">
+      <div class="project-info">
+        <h3>Residential Electrical Finishing</h3>
+        <p>
+          Quality electrical and lighting finishing for
+          residential projects.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- INDUSTRIAL -->
+
+    <div class="project" data-category="industrial">
+      <img src="images/industrial-control-panel-01.jpg"
+           alt="Industrial control panel">
+      <div class="project-info">
+        <h3>Industrial Control Panel</h3>
+        <p>
+          Industrial electrical control and technical installation work.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="project" data-category="industrial">
+      <img src="images/electrical-control-panel-02.jpg"
+           alt="Electrical control panel installation">
+      <div class="project-info">
+        <h3>Electrical Control System</h3>
+        <p>
+          Electrical control panel installation and technical work.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- LIGHTING -->
+
+    <div class="project" data-category="lighting">
+      <img src="images/chandelier-installation-01.jpg"
+           alt="Chandelier installation">
+      <div class="project-info">
+        <h3>Chandelier Installation</h3>
+        <p>
+          Professional decorative lighting installation.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="project" data-category="lighting">
+      <img src="images/ceiling-light-installation-02.jpg"
+           alt="Ceiling light installation">
+      <div class="project-info">
+        <h3>Ceiling Lighting Installation</h3>
+        <p>
+          Professional interior lighting installation and finishing.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="project" data-category="lighting">
+      <img src="images/ceiling-light-installation-03.jpg"
+           alt="Professional ceiling lighting installation">
+      <div class="project-info">
+        <h3>Interior Lighting</h3>
+        <p>
+          Modern residential lighting installation.
+        </p>
+      </div>
+    </div>
+
+
   </div>
 </section>
 
+
+<!-- CTA -->
 <section class="cta">
+
   <h2>Need a Solar or Electrical Solution?</h2>
-  <p>Contact us for installation, maintenance, troubleshooting or a quotation.</p>
-  <div class="buttons" style="justify-content:center"><a class="btn primary" href="https://wa.me/2347014997234">Chat on WhatsApp</a><a class="btn secondary" href="tel:+2348169729595">Call 08169729595</a></div>
+
+  <p>
+    Contact A I GARBA for installation, maintenance,
+    troubleshooting, upgrades or a quotation.
+  </p>
+
+  <div class="buttons" style="justify-content:center">
+
+    <a class="btn primary"
+       href="https://wa.me/2347014997234">
+      Chat on WhatsApp
+    </a>
+
+    <a class="btn secondary"
+       href="tel:+2348169729595">
+      Call 08169729595
+    </a>
+
+  </div>
+
 </section>
 
+
+<!-- CONTACT -->
 <section id="contact">
-  <div class="section-title"><h2>Contact Us</h2><p>We are available for electrical and solar projects.</p></div>
-  <div class="contact">
-    <div class="contact-box"><h3>Business Information</h3><p>📍 15 JAMA'A ROAD, UNGUWAN RIMI, KADUNA</p><p>📞 07014997234</p><p>📞 08169729595</p></div>
-    <div class="contact-box"><h3>Quality • Safety • Reliability • Professionalism</h3><p>Tell us what you need and our team can discuss the right solution for your project.</p><a class="btn primary" href="https://wa.me/2347014997234">Send WhatsApp Message</a></div>
+
+  <div class="section-title">
+
+    <h2>Contact Us</h2>
+
+    <p>
+      We are available for residential, commercial,
+      industrial, electrical and solar projects.
+    </p>
+
   </div>
+
+
+  <div class="contact">
+
+    <div class="contact-box">
+
+      <h3>Business Information</h3>
+
+      <p>
+        📍 15 JAMA'A ROAD, UNGUWAN RIMI, KADUNA
+      </p>
+
+      <p>
+        📞 <a href="tel:+2347014997234">
+        07014997234
+        </a>
+      </p>
+
+      <p>
+        📞 <a href="tel:+2348169729595">
+        08169729595
+        </a>
+      </p>
+
+    </div>
+
+
+    <div class="contact-box">
+
+      <h3>
+        Quality • Safety • Reliability • Professionalism
+      </h3>
+
+      <p>
+        Tell us what you need and our team can discuss
+        the right electrical or solar solution for your project.
+      </p>
+
+      <a class="btn primary"
+         href="https://wa.me/2347014997234">
+        Send WhatsApp Message
+      </a>
+
+    </div>
+
+  </div>
+
 </section>
+
 </main>
 
-<footer>© 2026 A I GARBA ELECTRICAL AND SOLAR INSTALLATION SERVICES. All Rights Reserved.</footer>
+
+<footer>
+
+  © 2026 A I GARBA ELECTRICAL AND SOLAR INSTALLATION SERVICES.
+  All Rights Reserved.
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+
+<a class="whatsapp"
+   href="https://wa.me/2347014997234"
+   aria-label="Chat with A I GARBA on WhatsApp">
+  💬
+</a>
+
+
+<script>
+
+function filterProjects(category){
+
+  const projects =
+    document.querySelectorAll('.project');
+
+  const buttons =
+    document.querySelectorAll('.filter');
+
+
+  buttons.forEach(button =>
+    button.classList.remove('active')
+  );
+
+
+  event.target.classList.add('active');
+
+
+  projects.forEach(project => {
+
+    if(category === 'all' ||
+       project.dataset.category === category){
+
+      project.style.display = 'block';
+
+    }else{
+
+      project.style.display = 'none';
+
+    }
+
+  });
+
+}
+
+</script>
+
 </body>
-</html>
+  </html>
