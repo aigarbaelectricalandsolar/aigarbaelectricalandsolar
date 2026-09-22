@@ -65,17 +65,23 @@
     }
 
 
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 90px;
-    }
+    html {scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+  height: auto;
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden; }
 
 
     body {
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+    }
 
       color: var(--text);
 
