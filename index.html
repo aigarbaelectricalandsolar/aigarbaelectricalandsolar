@@ -1,850 +1,1392 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>A I GARBA Electrical & Solar Installation Services</title>
-
-<meta name="description" content="A I GARBA Electrical & Solar Installation Services provides professional solar, inverter, battery, electrical, industrial and lighting installation services for homes, businesses and commercial projects.">
-
-<style>
-:root{
-  --dark:#071219;
-  --dark2:#102a3a;
-  --gold:#f5b700;
-  --gold2:#ffc928;
-  --light:#f5f7f9;
-  --white:#ffffff;
-  --text:#17212b;
-  --muted:#65737d;
-  --border:#e2e7eb;
-}
-
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  font-family:Arial,Helvetica,sans-serif;
-  color:var(--text);
-  line-height:1.6;
-  background:#fff;
-}
-
-header{
-  background:linear-gradient(135deg,var(--dark),var(--dark2));
-  color:#fff;
-  padding:18px 7%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  box-shadow:0 3px 15px rgba(0,0,0,.18);
-}
-
-.logo{
-  font-weight:800;
-  font-size:17px;
-  max-width:650px;
-  line-height:1.3;
-}
-
-.logo span{
-  color:var(--gold);
-}
-
-nav a{
-  color:#fff;
-  text-decoration:none;
-  margin-left:20px;
-  font-weight:700;
-  font-size:14px;
-}
-
-nav a:hover{
-  color:var(--gold);
-}
-
-.hero{
-  background:
-    linear-gradient(rgba(5,15,22,.82),rgba(5,15,22,.88)),
-    url('images/solar-inverter-installation-01.jpg') center/cover;
-  min-height:650px;
-  display:flex;
-  align-items:center;
-  padding:80px 7%;
-  color:#fff;
-}
-
-.hero-content{
-  max-width:800px;
-}
-
-.badge{
-  color:var(--gold);
-  font-weight:800;
-  letter-spacing:2px;
-  margin-bottom:15px;
-  font-size:14px;
-}
-
-h1{
-  font-size:clamp(40px,6vw,72px);
-  line-height:1.05;
-  margin-bottom:22px;
-}
-
-.hero p{
-  font-size:20px;
-  max-width:700px;
-  color:#e5edf2;
-}
-
-.buttons{
-  margin-top:30px;
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-}
-
-.btn{
-  padding:14px 22px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:800;
-  display:inline-block;
-  transition:.2s;
-}
-
-.btn:hover{
-  transform:translateY(-2px);
-}
-
-.primary{
-  background:var(--gold);
-  color:#111;
-}
-
-.primary:hover{
-  background:var(--gold2);
-}
-
-.secondary{
-  border:1px solid #fff;
-  color:#fff;
-}
-
-.secondary:hover{
-  background:#fff;
-  color:#111;
-}
-
-section{
-  padding:80px 7%;
-}
-
-.section-title{
-  text-align:center;
-  max-width:800px;
-  margin:0 auto 45px;
-}
-
-.section-title h2{
-  font-size:38px;
-  margin-bottom:10px;
-}
-
-.section-title p{
-  color:var(--muted);
-}
-
-.services{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:20px;
-}
-
-.card{
-  padding:28px;
-  border-radius:14px;
-  background:var(--light);
-  border:1px solid var(--border);
-  transition:.2s;
-}
-
-.card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-.icon{
-  font-size:34px;
-  margin-bottom:12px;
-}
-
-.card h3{
-  margin-bottom:8px;
-}
-
-.about{
-  background:#eef3f5;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:45px;
-  align-items:center;
-}
-
-.about-image{
-  width:100%;
-  height:420px;
-  object-fit:cover;
-  border-radius:16px;
-}
-
-.checks{
-  margin-top:20px;
-  display:grid;
-  gap:10px;
-}
-
-.checks div{
-  font-weight:700;
-}
-
-.project-filters{
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-bottom:30px;
-}
-
-.filter{
-  border:1px solid var(--border);
-  background:#fff;
-  padding:10px 16px;
-  border-radius:30px;
-  font-weight:700;
-  cursor:pointer;
-}
-
-.filter.active,
-.filter:hover{
-  background:var(--gold);
-  border-color:var(--gold);
-}
-
-.projects{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
-}
-
-.project{
-  background:#fff;
-  border-radius:14px;
-  overflow:hidden;
-  border:1px solid var(--border);
-  box-shadow:0 5px 18px rgba(0,0,0,.06);
-}
-
-.project img{
-  width:100%;
-  height:240px;
-  object-fit:cover;
-  display:block;
-}
-
-.project-info{
-  padding:18px;
-}
-
-.project-info h3{
-  margin-bottom:5px;
-}
-
-.project-info p{
-  color:var(--muted);
-  font-size:14px;
-}
-
-.cta{
-  background:linear-gradient(135deg,#071219,#102a3a);
-  color:#fff;
-  text-align:center;
-}
-
-.cta h2{
-  font-size:38px;
-  margin-bottom:12px;
-}
-
-.contact{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:30px;
-}
-
-.contact-box{
-  background:var(--light);
-  padding:30px;
-  border-radius:14px;
-  border:1px solid var(--border);
-}
-
-.contact-box p{
-  margin:12px 0;
-}
-
-.contact-box a{
-  color:inherit;
-}
-
-footer{
-  background:#071219;
-  color:#dce5ea;
-  text-align:center;
-  padding:28px 7%;
-  font-size:14px;
-}
-
-.whatsapp{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  z-index:999;
-  background:#25D366;
-  color:#fff;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-decoration:none;
-  font-size:27px;
-  box-shadow:0 5px 18px rgba(0,0,0,.25);
-}
-
-@media(max-width:800px){
-  nav{
-    display:none;
-  }
-
-  .about,
-  .contact{
-    grid-template-columns:1fr;
-  }
-
-  .hero{
-    min-height:600px;
-  }
-
-  .about-image{
-    height:300px;
-  }
-
-  section{
-    padding:60px 6%;
-  }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <div class="logo">
-    ⚡☀️ <span>A I GARBA</span><br>
-    ELECTRICAL AND SOLAR INSTALLATION SERVICES
-  </div>
-
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<main>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-
-    <div class="badge">
-      RELIABLE POWER • SMART ENERGY • PROFESSIONAL SOLUTIONS
-    </div>
-
-    <h1>
-      Electrical & Solar Solutions You Can Rely On.
-    </h1>
-
-    <p>
-      Professional solar, inverter, battery and electrical installation
-      services for homes, businesses, commercial facilities and industrial projects.
-    </p>
-
-    <div class="buttons">
-      <a class="btn primary"
-         href="https://wa.me/2347014997234?text=Hello%20A%20I%20GARBA%20Electrical%20and%20Solar%20Installation%20Services%2C%20I%20would%20like%20to%20request%20a%20quotation.">
-        Request a Quote
-      </a>
-
-      <a class="btn secondary" href="tel:+2347014997234">
-        Call 07014997234
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- SERVICES -->
-<section id="services">
-
-  <div class="section-title">
-    <h2>Our Services</h2>
-    <p>
-      Safe, reliable and efficient electrical and solar solutions
-      delivered with professional workmanship.
-    </p>
-  </div>
-
-  <div class="services">
-
-    <div class="card">
-      <div class="icon">☀️</div>
-      <h3>Solar Installation</h3>
-      <p>
-        Solar panel system design, installation, wiring,
-        commissioning and system upgrades.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="icon">🔋</div>
-      <h3>Inverter & Battery Systems</h3>
-      <p>
-        Professional inverter, lithium battery and
-        energy-storage installation and configuration.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="icon">⚡</div>
-      <h3>Electrical Installation</h3>
-      <p>
-        Residential, commercial and industrial electrical
-        installation, wiring and distribution systems.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="icon">🏭</div>
-      <h3>Industrial Electrical Services</h3>
-      <p>
-        Industrial control panels, electrical systems,
-        maintenance, troubleshooting and technical support.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="icon">💡</div>
-      <h3>Lighting Installation</h3>
-      <p>
-        Professional interior, exterior, residential and
-        commercial lighting installation.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="icon">🛠️</div>
-      <h3>Maintenance & Repairs</h3>
-      <p>
-        Fault finding, troubleshooting, maintenance,
-        repairs and electrical/solar system upgrades.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ABOUT -->
-<section id="about" class="about">
-
-  <div>
-
-    <div class="section-title"
-         style="text-align:left;margin:0 0 20px">
-      <h2>About A I GARBA</h2>
-    </div>
-
-    <p>
-      A I GARBA Electrical & Solar Installation Services provides
-      professional electrical and solar engineering solutions for
-      residential, commercial and industrial projects.
-    </p>
-
-    <p style="margin-top:15px">
-      Our work covers solar power systems, inverter and battery
-      installations, electrical wiring, control panels, lighting,
-      maintenance, troubleshooting and system upgrades.
-    </p>
-
-    <div class="checks">
-      <div>✓ Quality workmanship</div>
-      <div>✓ Safety-focused installation</div>
-      <div>✓ Reliable power solutions</div>
-      <div>✓ Professional service</div>
-      <div>✓ Residential & commercial projects</div>
-      <div>✓ Industrial electrical services</div>
-    </div>
-
-  </div>
-
-  <img
-    class="about-image"
-    src="images/solar-inverter-installation-team-02.jpg"
-    alt="A I GARBA solar and inverter installation team">
-
-</section>
-
-
-<!-- PROJECTS -->
-<section id="projects">
-
-  <div class="section-title">
-    <h2>Our Projects</h2>
-    <p>
-      Real examples of our electrical, solar, inverter,
-      industrial and lighting installation work.
-    </p>
-  </div>
-
-
-  <div class="project-filters">
-
-    <button class="filter active" onclick="filterProjects('all')">
-      All
-    </button>
-
-    <button class="filter" onclick="filterProjects('solar')">
-      Solar & Inverter
-    </button>
-
-    <button class="filter" onclick="filterProjects('electrical')">
-      Electrical
-    </button>
-
-    <button class="filter" onclick="filterProjects('industrial')">
-      Industrial
-    </button>
-
-    <button class="filter" onclick="filterProjects('lighting')">
-      Lighting
-    </button>
-
-  </div>
-
-
-  <div class="projects">
-
-
-    <!-- SOLAR / INVERTER -->
-
-    <div class="project" data-category="solar">
-      <img src="images/solar-inverter-installation-01.jpg"
-           alt="Solar inverter installation">
-      <div class="project-info">
-        <h3>Solar Inverter Installation</h3>
-        <p>
-          Professional inverter installation with electrical
-          protection and system connections.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="project" data-category="solar">
-      <img src="images/solar-inverter-installation-team-02.jpg"
-           alt="Professional solar inverter installation team">
-      <div class="project-info">
-        <h3>Professional Installation Team</h3>
-        <p>
-          Technical installation and commissioning work
-          carried out by our installation team.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="project" data-category="solar">
-      <img src="images/solar-inverter-installation-work-03.jpg"
-           alt="Solar inverter installation work">
-      <div class="project-info">
-        <h3>Inverter & Protection System</h3>
-        <p>
-          Neat installation of inverter and electrical
-          protection equipment.
-        </p>
-      </div>
-    </div>
-
-
-    <!-- ELECTRICAL -->
-
-    <div class="project" data-category="electrical">
-      <img src="images/residential-electrical-work-01.jpg"
-           alt="Residential electrical installation">
-      <div class="project-info">
-        <h3>Residential Electrical Work</h3>
-        <p>
-          Professional residential electrical installation
-          and finishing.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="project" data-category="electrical">
-      <img src="images/residential-lighting-finish-02.jpg"
-           alt="Residential electrical and lighting work">
-      <div class="project-info">
-        <h3>Residential Electrical Finishing</h3>
-        <p>
-          Quality electrical and lighting finishing for
-          residential projects.
-        </p>
-      </div>
-    </div>
-
-
-    <!-- INDUSTRIAL -->
-
-    <div class="project" data-category="industrial">
-      <img src="images/industrial-control-panel-01.jpg"
-           alt="Industrial control panel">
-      <div class="project-info">
-        <h3>Industrial Control Panel</h3>
-        <p>
-          Industrial electrical control and technical installation work.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="project" data-category="industrial">
-      <img src="images/electrical-control-panel-02.jpg"
-           alt="Electrical control panel installation">
-      <div class="project-info">
-        <h3>Electrical Control System</h3>
-        <p>
-          Electrical control panel installation and technical work.
-        </p>
-      </div>
-    </div>
-
-
-    <!-- LIGHTING -->
-
-    <div class="project" data-category="lighting">
-      <img src="images/chandelier-installation-01.jpg"
-           alt="Chandelier installation">
-      <div class="project-info">
-        <h3>Chandelier Installation</h3>
-        <p>
-          Professional decorative lighting installation.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="project" data-category="lighting">
-      <img src="images/ceiling-light-installation-02.jpg"
-           alt="Ceiling light installation">
-      <div class="project-info">
-        <h3>Ceiling Lighting Installation</h3>
-        <p>
-          Professional interior lighting installation and finishing.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="project" data-category="lighting">
-      <img src="images/ceiling-light-installation-03.jpg"
-           alt="Professional ceiling lighting installation">
-      <div class="project-info">
-        <h3>Interior Lighting</h3>
-        <p>
-          Modern residential lighting installation.
-        </p>
-      </div>
-    </div>
-
-
-  </div>
-</section>
-
-
-<!-- CTA -->
-<section class="cta">
-
-  <h2>Need a Solar or Electrical Solution?</h2>
-
-  <p>
-    Contact A I GARBA for installation, maintenance,
-    troubleshooting, upgrades or a quotation.
-  </p>
-
-  <div class="buttons" style="justify-content:center">
-
-    <a class="btn primary"
-       href="https://wa.me/2347014997234">
-      Chat on WhatsApp
-    </a>
-
-    <a class="btn secondary"
-       href="tel:+2348169729595">
-      Call 08169729595
-    </a>
-
-  </div>
-
-</section>
-
-
-<!-- CONTACT -->
-<section id="contact">
-
-  <div class="section-title">
-
-    <h2>Contact Us</h2>
-
-    <p>
-      We are available for residential, commercial,
-      industrial, electrical and solar projects.
-    </p>
-
-  </div>
-
-
-  <div class="contact">
-
-    <div class="contact-box">
-
-      <h3>Business Information</h3>
-
-      <p>
-        📍 15 JAMA'A ROAD, UNGUWAN RIMI, KADUNA
-      </p>
-
-      <p>
-        📞 <a href="tel:+2347014997234">
-        07014997234
-        </a>
-      </p>
-
-      <p>
-        📞 <a href="tel:+2348169729595">
-        08169729595
-        </a>
-      </p>
-
-    </div>
-
-
-    <div class="contact-box">
-
-      <h3>
-        Quality • Safety • Reliability • Professionalism
-      </h3>
-
-      <p>
-        Tell us what you need and our team can discuss
-        the right electrical or solar solution for your project.
-      </p>
-
-      <a class="btn primary"
-         href="https://wa.me/2347014997234">
-        Send WhatsApp Message
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-</main>
-
-
-<footer>
-
-  © 2026 A I GARBA ELECTRICAL AND SOLAR INSTALLATION SERVICES.
-  All Rights Reserved.
-
-</footer>
-
-
-<!-- FLOATING WHATSAPP BUTTON -->
-
-<a class="whatsapp"
-   href="https://wa.me/2347014997234"
-   aria-label="Chat with A I GARBA on WhatsApp">
-  💬
-</a>
-
-
-<script>
-
-function filterProjects(category){
-
-  const projects =
-    document.querySelectorAll('.project');
-
-  const buttons =
-    document.querySelectorAll('.filter');
-
-
-  buttons.forEach(button =>
-    button.classList.remove('active')
-  );
-
-
-  event.target.classList.add('active');
-
-
-  projects.forEach(project => {
-
-    if(category === 'all' ||
-       project.dataset.category === category){
-
-      project.style.display = 'block';
-
-    }else{
-
-      project.style.display = 'none';
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="A I GARBA Electrical & Solar Installation Services provides professional solar, inverter, battery, electrical, industrial and lighting installation services in Kaduna and beyond."
+  >
+
+  <meta
+    name="keywords"
+    content="solar installation Kaduna, inverter installation Kaduna, lithium battery installation, electrical installation Kaduna, solar panels, electrical contractor, industrial electrical services"
+  >
+
+  <meta name="author" content="A I GARBA Electrical & Solar Installation Services">
+
+  <meta name="theme-color" content="#071219">
+
+  <title>
+    A I GARBA | Electrical & Solar Installation Services
+  </title>
+
+  <style>
+
+    /* =========================================================
+       GLOBAL
+    ========================================================= */
+
+    :root {
+      --navy: #071219;
+      --navy-light: #102a3a;
+      --gold: #f5b700;
+      --gold-light: #ffc928;
+
+      --white: #ffffff;
+      --light: #f5f7f9;
+      --light-blue: #eef3f5;
+
+      --text: #17212b;
+      --muted: #65737d;
+
+      --border: #e1e7eb;
+
+      --success: #25d366;
+
+      --shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+      --radius: 16px;
+
+      --container: 1180px;
+    }
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+
+    body {
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      color: var(--text);
+
+      background: var(--white);
+
+      line-height: 1.7;
+
+      overflow-x: hidden;
+    }
+
+
+    img {
+      max-width: 100%;
+    }
+
+
+    a {
+      text-decoration: none;
+    }
+
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+
+    .container {
+      width: min(
+        calc(100% - 40px),
+        var(--container)
+      );
+
+      margin-inline: auto;
+    }
+
+
+    /* =========================================================
+       HEADER
+    ========================================================= */
+
+    header {
+      position: sticky;
+      top: 0;
+
+      z-index: 1000;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--navy),
+          var(--navy-light)
+        );
+
+      color: var(--white);
+
+      box-shadow:
+        0 3px 20px rgba(0, 0, 0, 0.18);
+    }
+
+
+    .navbar {
+      min-height: 76px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 30px;
+    }
+
+
+    .brand {
+      display: flex;
+
+      align-items: center;
+
+      gap: 12px;
+
+      color: var(--white);
+
+      font-weight: 800;
+
+      line-height: 1.25;
+    }
+
+
+    .brand-icon {
+      width: 45px;
+      height: 45px;
+
+      display: grid;
+
+      place-items: center;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--gold),
+          var(--gold-light)
+        );
+
+      color: #111;
+
+      font-size: 21px;
+
+      flex-shrink: 0;
+    }
+
+
+    .brand-text {
+      font-size: 15px;
+
+      letter-spacing: .2px;
+    }
+
+
+    .brand-text span {
+      color: var(--gold);
+    }
+
+
+    .nav-links {
+      display: flex;
+
+      align-items: center;
+
+      gap: 25px;
+
+      list-style: none;
+    }
+
+
+    .nav-links a {
+      color: #fff;
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      transition: .2s;
+    }
+
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+
+    .nav-cta {
+      padding: 10px 16px;
+
+      background: var(--gold);
+
+      color: #111 !important;
+
+      border-radius: 8px;
+    }
+
+
+    .nav-cta:hover {
+      background: var(--gold-light);
+
+      transform: translateY(-1px);
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      min-height: 690px;
+
+      display: flex;
+
+      align-items: center;
+
+      position: relative;
+
+      color: #fff;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(4, 13, 19, .94) 0%,
+          rgba(4, 13, 19, .78) 48%,
+          rgba(4, 13, 19, .50) 100%
+        ),
+        url("images/solar-inverter-installation-01.jpg")
+        center / cover no-repeat;
+    }
+
+
+    .hero-content {
+      max-width: 780px;
+
+      padding: 90px 0;
+    }
+
+
+    .eyebrow {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      color: var(--gold);
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      letter-spacing: 1.8px;
+
+      margin-bottom: 18px;
+    }
+
+
+    .eyebrow::before {
+      content: "";
+
+      width: 28px;
+      height: 2px;
+
+      background: var(--gold);
+    }
+
+
+    .hero h1 {
+      font-size:
+        clamp(42px, 6vw, 72px);
+
+      line-height: 1.04;
+
+      letter-spacing: -1.5px;
+
+      margin-bottom: 24px;
+    }
+
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+
+    .hero-description {
+      max-width: 700px;
+
+      color: #e1e9ee;
+
+      font-size: 19px;
+
+      line-height: 1.8;
+    }
+
+
+    .hero-actions {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 13px;
+
+      margin-top: 32px;
+    }
+
+
+    .btn {
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 8px;
+
+      min-height: 50px;
+
+      padding: 13px 22px;
+
+      border-radius: 9px;
+
+      font-weight: 800;
+
+      transition:
+        transform .2s,
+        background .2s,
+        box-shadow .2s;
+    }
+
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+
+    .btn-primary {
+      background: var(--gold);
+
+      color: #111;
+
+      box-shadow:
+        0 8px 20px rgba(245, 183, 0, .22);
+    }
+
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+    }
+
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.7);
+
+      color: #fff;
+
+      background: rgba(255,255,255,.04);
+    }
+
+
+    .btn-outline:hover {
+      background: #fff;
+
+      color: #111;
+    }
+
+
+    /* =========================================================
+       TRUST BAR
+    ========================================================= */
+
+    .trust-bar {
+      background: var(--gold);
+
+      color: #111;
+    }
+
+
+    .trust-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+    }
+
+
+    .trust-item {
+      padding: 24px 15px;
+
+      text-align: center;
+
+      border-right:
+        1px solid rgba(0,0,0,.12);
+    }
+
+
+    .trust-item:last-child {
+      border-right: none;
+    }
+
+
+    .trust-item strong {
+      display: block;
+
+      font-size: 16px;
+
+      margin-bottom: 3px;
+    }
+
+
+    .trust-item span {
+      font-size: 13px;
+
+      opacity: .78;
+    }
+
+
+    /* =========================================================
+       GENERAL SECTIONS
+    ========================================================= */
+
+    section {
+      padding: 90px 0;
+    }
+
+
+    .section-heading {
+      max-width: 760px;
+
+      margin:
+        0 auto 48px;
+
+      text-align: center;
+    }
+
+
+    .section-label {
+      color: var(--gold);
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      letter-spacing: 1.8px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 8px;
+    }
+
+
+    .section-heading h2 {
+      font-size:
+        clamp(32px, 4vw, 44px);
+
+      line-height: 1.15;
+
+      margin-bottom: 13px;
+    }
+
+
+    .section-heading p {
+      color: var(--muted);
+
+      font-size: 16px;
+    }
+
+
+    /* =========================================================
+       SERVICES
+    ========================================================= */
+
+    .services {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 22px;
+    }
+
+
+    .service-card {
+      padding: 30px;
+
+      background: var(--light);
+
+      border: 1px solid var(--border);
+
+      border-radius: var(--radius);
+
+      transition:
+        transform .2s,
+        box-shadow .2s,
+        border-color .2s;
+    }
+
+
+    .service-card:hover {
+      transform: translateY(-5px);
+
+      box-shadow: var(--shadow);
+
+      border-color:
+        rgba(245,183,0,.55);
+    }
+
+
+    .service-icon {
+      width: 54px;
+      height: 54px;
+
+      display: grid;
+
+      place-items: center;
+
+      border-radius: 13px;
+
+      background: #fff;
+
+      font-size: 27px;
+
+      margin-bottom: 20px;
+
+      box-shadow:
+        0 5px 15px rgba(0,0,0,.05);
+    }
+
+
+    .service-card h3 {
+      font-size: 20px;
+
+      margin-bottom: 9px;
+    }
+
+
+    .service-card p {
+      color: var(--muted);
+
+      font-size: 15px;
+    }
+
+
+    /* =========================================================
+       ABOUT
+    ========================================================= */
+
+    .about {
+      background: var(--light-blue);
+    }
+
+
+    .about-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 60px;
+
+      align-items: center;
+    }
+
+
+    .about-image-wrap {
+      position: relative;
+    }
+
+
+    .about-image {
+      width: 100%;
+
+      height: 480px;
+
+      object-fit: cover;
+
+      border-radius: 20px;
+
+      box-shadow: var(--shadow);
+    }
+
+
+    .about-badge {
+      position: absolute;
+
+      left: 20px;
+
+      bottom: 20px;
+
+      padding: 16px 20px;
+
+      background:
+        rgba(7,18,25,.93);
+
+      color: #fff;
+
+      border-left:
+        4px solid var(--gold);
+
+      border-radius: 10px;
+
+      font-weight: 800;
+    }
+
+
+    .about-content h2 {
+      font-size:
+        clamp(32px, 4vw, 44px);
+
+      line-height: 1.15;
+
+      margin-bottom: 18px;
+    }
+
+
+    .about-content > p {
+      color: var(--muted);
+
+      margin-bottom: 15px;
+    }
+
+
+    .check-list {
+      display: grid;
+
+      gap: 11px;
+
+      margin-top: 24px;
+
+      list-style: none;
+    }
+
+
+    .check-list li {
+      display: flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      font-weight: 700;
+    }
+
+
+    .check {
+      width: 24px;
+      height: 24px;
+
+      display: grid;
+
+      place-items: center;
+
+      border-radius: 50%;
+
+      background: var(--gold);
+
+      color: #111;
+
+      font-size: 13px;
+
+      font-weight: 900;
+
+      flex-shrink: 0;
+    }
+
+
+    /* =========================================================
+       PROJECTS
+    ========================================================= */
+
+    .filters {
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 9px;
+
+      margin-bottom: 32px;
+    }
+
+
+    .filter-btn {
+      border: 1px solid var(--border);
+
+      background: #fff;
+
+      color: var(--text);
+
+      padding: 10px 17px;
+
+      border-radius: 30px;
+
+      font: inherit;
+
+      font-size: 14px;
+
+      font-weight: 800;
+
+      cursor: pointer;
+
+      transition: .2s;
+    }
+
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--gold);
+
+      border-color: var(--gold);
+
+      color: #111;
+    }
+
+
+    .project-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 22px;
+    }
+
+
+    .project-card {
+      overflow: hidden;
+
+      background: #fff;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: var(--radius);
+
+      box-shadow:
+        0 5px 20px rgba(0,0,0,.05);
+
+      transition:
+        transform .2s,
+        box-shadow .2s;
+    }
+
+
+    .project-card:hover {
+      transform: translateY(-5px);
+
+      box-shadow: var(--shadow);
+    }
+
+
+    .project-image {
+      width: 100%;
+
+      height: 250px;
+
+      object-fit: cover;
+
+      display: block;
+
+      transition: transform .35s;
+    }
+
+
+    .project-card:hover .project-image {
+      transform: scale(1.04);
+    }
+
+
+    .project-info {
+      padding: 20px;
+    }
+
+
+    .project-category {
+      display: inline-block;
+
+      color: #7b5b00;
+
+      background: #fff6d7;
+
+      padding: 4px 9px;
+
+      border-radius: 20px;
+
+      font-size: 11px;
+
+      font-weight: 800;
+
+      text-transform: uppercase;
+
+      letter-spacing: .5px;
+
+      margin-bottom: 8px;
+    }
+
+
+    .project-info h3 {
+      font-size: 19px;
+
+      margin-bottom: 5px;
+    }
+
+
+    .project-info p {
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+
+    .hidden-project {
+      display: none !important;
+    }
+
+
+    /* =========================================================
+       CTA
+    ========================================================= */
+
+    .cta {
+      background:
+        linear-gradient(
+          135deg,
+          var(--navy),
+          var(--navy-light)
+        );
+
+      color: #fff;
+
+      text-align: center;
+    }
+
+
+    .cta h2 {
+      font-size:
+        clamp(32px, 4vw, 44px);
+
+      margin-bottom: 12px;
+    }
+
+
+    .cta p {
+      color: #d9e3e8;
+
+      max-width: 680px;
+
+      margin: 0 auto;
+    }
+
+
+    .cta-actions {
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 13px;
+
+      margin-top: 28px;
+    }
+
+
+    /* =========================================================
+       CONTACT
+    ========================================================= */
+
+    .contact-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 24px;
+    }
+
+
+    .contact-card {
+      padding: 30px;
+
+      background: var(--light);
+
+      border:
+        1px solid var(--border);
+
+      border-radius: var(--radius);
+    }
+
+
+    .contact-card h3 {
+      font-size: 22px;
+
+      margin-bottom: 15px;
+    }
+
+
+    .contact-item {
+      display: flex;
+
+      gap: 13px;
+
+      align-items: flex-start;
+
+      margin: 16px 0;
+    }
+
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+
+      display: grid;
+
+      place-items: center;
+
+      background: #fff;
+
+      border-radius: 10px;
+
+      flex-shrink: 0;
+    }
+
+
+    .contact-item strong {
+      display: block;
+    }
+
+
+    .contact-item a {
+      color: var(--text);
+
+      font-weight: 700;
+    }
+
+
+    .contact-item a:hover {
+      color: #a77d00;
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+      background: #040c11;
+
+      color: #cdd8de;
+
+      padding: 35px 0;
+    }
+
+
+    .footer-grid {
+      display: grid;
+
+      grid-template-columns:
+        1.5fr 1fr 1fr;
+
+      gap: 35px;
+    }
+
+
+    .footer-brand {
+      font-size: 20px;
+
+      font-weight: 800;
+
+      color: #fff;
+
+      margin-bottom: 10px;
+    }
+
+
+    .footer-brand span {
+      color: var(--gold);
+    }
+
+
+    footer p {
+      color: #9eabb3;
+
+      font-size: 14px;
+    }
+
+
+    .footer-column h4 {
+      color: #fff;
+
+      margin-bottom: 12px;
+    }
+
+
+    .footer-column a {
+      display: block;
+
+      color: #aebbc2;
+
+      font-size: 14px;
+
+      margin: 7px 0;
+    }
+
+
+    .footer-column a:hover {
+      color: var(--gold);
+    }
+
+
+    .copyright {
+      border-top:
+        1px solid rgba(255,255,255,.08);
+
+      margin-top: 28px;
+
+      padding-top: 22px;
+
+      text-align: center;
+
+      color: #87959d;
+
+      font-size: 13px;
+    }
+
+
+    /* =========================================================
+       FLOATING WHATSAPP
+    ========================================================= */
+
+    .whatsapp-button {
+      position: fixed;
+
+      right: 20px;
+
+      bottom: 20px;
+
+      width: 58px;
+      height: 58px;
+
+      display: grid;
+
+      place-items: center;
+
+      background: var(--success);
+
+      color: #fff;
+
+      border-radius: 50%;
+
+      font-size: 27px;
+
+      z-index: 999;
+
+      box-shadow:
+        0 7px 25px rgba(0,0,0,.25);
+
+      transition: .2s;
+    }
+
+
+    .whatsapp-button:hover {
+      transform: scale(1.08);
+    }
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media (max-width: 950px) {
+
+      .services {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+
+      .project-grid {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+
+      .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+      }
+
+
+      .about-image {
+        height: 400px;
+      }
+
+
+      .footer-grid {
+        grid-template-columns:
+          1fr 1fr;
+      }
 
     }
 
-  });
 
-}
+    @media (max-width: 700px) {
 
-</script>
+      .container {
+        width:
+          min(
+            calc(100% - 28px),
+            var(--container)
+          );
+      }
 
-</body>
-  </html>
+
+      .navbar {
+        min-height: 68px;
+      }
+
+
+      .brand-icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 18px;
+      }
+
+
+      .brand-text {
+        font-size: 12px;
+      }
+
+
+      .nav-links {
+        display: none;
+      }
+
+
+      .hero {
+        min-height: 650px;
+      }
+
+
+      .hero-content {
+        padding: 70px 0;
+      }
+
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+
+      .hero-description {
+        font-size: 17px;
+      }
+
+
+      .trust-grid {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+
+      .trust-item:nth-child(2) {
+        border-right: none;
+      }
+
+
+      .trust-item:nth-child(-n+2) {
+        border-bottom:
+          1px solid rgba(0,0,0,.12);
+      }
+
+
+      section {
+        padding: 65px 0;
+      }
+
+
+      .services,
+      .project-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+
+      .about-image {
+        height: 300px;
+      }
+
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+
+      .btn {
+        width: 100%;
+      }
+
+
+      .hero-actions,
+      .cta-actions {
+        flex-direction: column;
+      }
+
+
+      .filters {
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        padding-bottom: 5px;
+
+        flex-wrap: nowrap;
+      }
+
+
+      .filter-btn {
+        white-space: nowrap;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =======================================================
+       HEADER
+  ======================================================== -->
+
+  <header>
+
+    <div class="container navbar">
+
+      <a href="#top" class="brand">
+
+        <div class="brand-icon">
+          ⚡☀️
+        </div>
+
+        <div class="brand-text">
+          <span>A I GARBA</span><br>
+          ELECTRICAL & SOLAR SERVICES
+        </div>
+
+      </a>
+
+
+      <nav aria-label="Main navigation">
+
+        <ul class="nav-links">
+
+          <li>
+            <a href="#services">
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a href="#about">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="#projects">
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact">
+              Contact
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="nav-cta"
+              href="https://wa.me/2347014997234"
+            >
+              WhatsApp
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main id="top">
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero">
+
+      <div class="container">
+
+        <div class="hero-content">
+
+          <div class="eyebrow">
+            PROFESSIONAL POWER SOLUTIONS
+          </div>
+
+
+          <h1>
+            Reliable Electrical &
+            <span>Solar Solutions</span>
+            You Can Trust.
+          </h1>
+
+
+          <p class="hero-description">
+
+            Professional solar, inverter, battery,
+            electrical, industrial and lighting
+            installation services for homes,
+            businesses and commercial projects.
+
+          </p>
+
+
+          <div class="hero-actions">
+
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/2347014997234?text=Hello%20A%20I%20GARBA%20Electrical%20and%20Solar%20Installation%20Services%2C%20I%20would%20like%20to%20request%20a%20quotation."
+            >
+              💬 Request a Quote
+            </a>
+
+
+            <a
+              class="btn btn-outline
